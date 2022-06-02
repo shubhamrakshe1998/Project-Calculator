@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--<script src="scripts.js"></script>-->
+    <!--below script is to addfavicon to website-->
+    
+    <!--
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/gif" href="favicon.gif" />                 
+    -->
+    <!--this is type is for ico files only for png we have change the type  if we want to
+         show favicon on chrome they we have place it into root directory   images/favicon.ico wont work-->
+    <!--<link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="favicon.ico">   -->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> 
+
+
+</head>
+<body>
+    <!--below div is for showing ttext like-->
+    <div class="main">
+        <h4 id="heading">Body Mass Index (BMI) Calculator</h4>
+    </div>
+    
+    
+    <!--below div is for rounded box which contain all the remain info-->
+
+    <div class="main_2">
+        <!--it contain name called bmi calculator-->
+        <h4 id="heading_2">BMI Calculator</h4>
+        
+
+        <!--below code is div box which will show the results wather it is overwait or underwait-->
+        <div class="show_results">
+                <h4 id="result_val"></h4>
+                <h4 id="result_expression"></h4>
+        </div>
+
+        <!--below code is radio button for selecting male or female-->
+        <div class="radio_button">  
+            <!--to select only one value out of radio button then we have to give same group name for button 
+            like below we have sec_type means evry radio button with name sex_type we can select only one between them-->
+            <label for="male"> Male</label>
+            <input type="radio" name="sex_type" id="male" value="male" checked="checked">   <!--last chesck is added to make radio button chacked when we reload the page to avoid the programming problem-->
+            <label for="female"> Female</label>
+            <input type="radio" name="sex_type" id="female" value="female">
+        </div>
+
+        <!--below div will add range selectors with varible range-->
+
+
+        <!--below code is range selector for age-->
+        <div class="main_range_sel">   <!--to make all the range selectors in centror-->
+            <div class="range_sel">
+                <label for="age">Age</label>
+                <div class="range_and_value">
+                    <input type="range" min="1" max="100" value="24" name="Age" id="age" class="slider">
+                    <span id="age-val">24 Years</span>
+                </div>
+            </div>
+            <!--below code is range selector for weigth-->
+            <div class="range_sel">
+                <label for="height">Height</label>
+                <div class="range_and_value">
+                    <input type="range" min="1" max="100" value="65" name="height" id="height" class="slider">
+                    <span id="height-val">5'5" Feet </span>
+                </div>
+            </div>
+            <!--below code is range selector for height-->
+            <div class="range_sel">
+                <label for="weight">Weight</label>
+                <div class="range_and_value">
+                    <input type="range" min="1" max="120" value="54" name="weight" id="weight" class="slider">
+                    <span id="weight-val">54 kgs</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

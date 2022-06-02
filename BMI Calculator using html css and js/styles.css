@@ -1,0 +1,327 @@
+body{
+    /*background-image: linear-gradient(to bottom right, rgba(85, 76, 76, 0.486), rgb(241, 241, 95),rgb(240, 141, 75));*/
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size: 400% 500%;
+
+    /*background-attachment: fixed; */  /* very imp to fill all the back groud with gradiant color*/
+    /*animation: background_grad 2s infinite;*/
+    animation: background_grad 15s ease infinite;
+    transition: background-image 2s;
+}
+
+/*
+@keyframes background_grad{
+    from {    background-image: linear-gradient(to bottom right, rgba(85, 76, 76, 0.486), rgb(241, 241, 95),rgb(240, 141, 75));
+    }
+    to {    background-image: linear-gradient(to bottom right, rgba(187, 150, 150, 0.486), rgb(163, 163, 68),rgb(218, 103, 27));
+    }
+}*/
+
+@keyframes background_grad{
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+/*below code is for main heading*/
+.main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#heading{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*adding gradient to text but we want to add when we hover it and also want to add transition*/
+    /*
+    background: -webkit-linear-gradient(rgb(102, 100, 100), rgb(211, 126, 126));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+    /*for giving animations to it*/
+    background: -webkit-linear-gradient(-45deg, #f33900, #ff0163, #00bbff, #00ffc3);
+    background-size: 400%,400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background_grad_text 5s ease infinite;
+}
+
+
+#heading:hover{
+    font-size: 55px;
+    background: -webkit-linear-gradient(-45deg, #f33900, #ff0163, #00bbff, #00ffc3);
+    background-size: 400%,400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background_grad_text 5s ease infinite;
+
+}
+
+/*
+@keyframes background_grad_text{
+    from {      background: -webkit-linear-gradient(rgb(240, 10, 10), rgb(211, 126, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    to {       background: -webkit-linear-gradient(rgb(0, 162, 255), rgb(211, 126, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;} 
+
+
+}*/
+@keyframes background_grad_text{
+
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+/*below code is for main_2 div */
+.main_2{
+    display: flex inline-block;   /* done this to make every elemet in div one below anather*/
+    justify-content: center;
+    margin: auto;      /*as we are making this div to center align but due we have add width property it will go to center unless and untill we put margine auto property*/
+    width: 60%;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: #ffffff93;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+
+#heading_2{
+    margin-top: 0px;
+    width: 100%;
+    height: 8%;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.747);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+.show_results{
+    display: flex inline-block;
+    justify-content: center;
+    margin: auto; /* used to make center becouse we have used the width propertty*/
+    width: 60%;
+    height: 100px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0.726);
+    box-shadow: rgba(255, 255, 255, 0.726) 0px 10px 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+.radio_button{
+    display: flex inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    
+}
+.radio_button input{
+    background-color: rgba(238, 238, 238, 0.945);
+}
+
+.main_range_sel{
+    display: flex inline-block;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+}
+
+
+
+.range_sel{
+    display: flex;
+    flex-direction:column;
+    margin-top: 10px; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.range_sel input{
+}
+
+.range_sel label{
+    margin: 10px;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    background: #ececec;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #046daa;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+
+/*adding custom designs to radio button thats why modifing my code*/
+
+/*
+.dropdown_box{
+    display: flex;
+    justify-content: center;
+}
+
+#laptops{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 0px;
+    padding-left: 10px;
+    font-size: large;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: shadow_eff 5s ease infinite;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+#laptops:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+@keyframes shadow_eff {
+    0%{box-shadow: rgba(0, 238, 255, 0.747) 0px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    10%{box-shadow: rgba(0, 238, 255, 0.747) 5px 14px 28px, rgba(0, 255, 170, 0.705)0px 10px 10px;}
+    20%{box-shadow: rgba(0, 238, 255, 0.747) 5px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    30%{box-shadow: rgba(0, 238, 255, 0.747) 5px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    40%{box-shadow: rgba(0, 238, 255, 0.747) 5px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    50%{box-shadow: rgba(0, 238, 255, 0.747) 5px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    60%{box-shadow: rgba(0, 238, 255, 0.747) 5px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    70% {box-shadow: rgba(0, 238, 255, 0.747) 5px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    80%{box-shadow: rgba(0, 238, 255, 0.747) 5px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    90%{box-shadow: rgba(0, 238, 255, 0.747) 0px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+    100%{box-shadow: rgba(0, 238, 255, 0.747) 0px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;    }
+    0%{box-shadow: rgba(0, 238, 255, 0.747) 0px 14px 28px, rgba(0, 255, 170, 0.705) 0px 10px 10px;}
+ 
+}
+
+.option_list{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+}
+.content_box{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.gradient-border {
+    --border-width: 3px;
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    font-family: Lato, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    background: #222;
+    border-radius: var(--border-width);
+
+  
+
+  }
+  .gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  #show_content{
+      text-align: center;
+      font-size: large;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  */
